@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtCID_demo", "ProtCID_demo\ProtCID_demo.csproj", "{586BA309-CA00-449C-B501-7E0EFACADA75}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ProtCid_demo_setup", "ProtCid_demo_setup\ProtCid_demo_setup.vdproj", "{FA94F9F3-FF15-4D79-BBA7-D3628A8625DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586BA309-CA00-449C-B501-7E0EFACADA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586BA309-CA00-449C-B501-7E0EFACADA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586BA309-CA00-449C-B501-7E0EFACADA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586BA309-CA00-449C-B501-7E0EFACADA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA94F9F3-FF15-4D79-BBA7-D3628A8625DB}.Debug|Any CPU.ActiveCfg = Debug
+		{FA94F9F3-FF15-4D79-BBA7-D3628A8625DB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
