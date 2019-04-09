@@ -20,8 +20,8 @@ This demo program uses ProtCID libraries, and can be installed by the Windows in
 All source code of ProtCID including the demo program is written in C# in Visual studio 2013. It requires Windows operating system and .NET Framework 4.5. The installer will automatically install .NET Framework. 
 
 ## Installation Guide
-It is very easy to install the demo program. Just download [protcid_demo_setup.msi](https://github.com/DunbrackLab/ProtCID_demo/ProtCid_demo_setup) 
-or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/ProtCid_demo_setup), double click the installer, follow the steps, but to change the installation directory where the program can read and write to it.  
+It is very easy to install the demo program. Just download [protcid_demo_setup.msi](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release) 
+or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release), double click the installer, follow the steps, but to change the installation directory where the program can read and write to it.  
 
 ## Instructions for Use
 
