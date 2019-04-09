@@ -66,13 +66,13 @@ This will generate and cluster interfaces from PDB entries in ls-pdb_RAS.txt, ca
 
 ## Results
 Output of program include
-- **1.**	PDB xml files downloaded from rcsb web site, and converted into ProtCID specific xml files. <folder: xml>
-- **2.**	Text files
+- **PDB files** (PDB xml files downloaded from rcsb web site, and converted into ProtCID specific xml files. <folder: xml>)
+- **Text files**
 EntryInfo.txt, EntityChainInfo.txt, EntityUnpDbRef.txt (parsed from PDB xml files)
 CrystInterfaces.txt (definition of interfaces computed from crystals)
 SameEntryInterfaceCompInfo.txt, DiffEntryInterfaceCompInfo.txt (similarity Q scores between interfaces of each entry, between interfaces of two entries)
 InterfaceClusters.txt (Clusters of interfaces)
-- **3.**	Interface files (interface coordinate files in PDB format)
-- **4.**	Cluster coordinates files  (coordinates of each cluster including Pymol scripts to visualize a cluster )
+- **Interface files** (interface coordinate files in PDB format)
+- **Cluster coordinates files**  (coordinates of each cluster including Pymol scripts to visualize a cluster )
 
 
