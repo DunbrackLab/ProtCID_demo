@@ -19,21 +19,24 @@ This demo program uses ProtCID libraries, and can be installed by the Windows in
 All source code of ProtCID including the demo program is written in C# in Visual studio 2013. It requires Windows operating system and .NET Framework 4.5. The installer will automatically install .NET Framework. 
 
 ## Installation Guide
-It is very easy to install the demo program. Just download [protcid_demo_setup.msi] https://github.com/DunbrackLab/ProtCID_demo/ProtCid_demo_setup) 
-or [setup.exe] (https://github.com/DunbrackLab/ProtCID_demo/ProtCid_demo_setup), double click the installer, follow the steps, but to change the installation directory where the program can read and write to it.  
+It is very easy to install the demo program. Just download [protcid_demo_setup.msi](https://github.com/DunbrackLab/ProtCID_demo/ProtCid_demo_setup) 
+or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/ProtCid_demo_setup), double click the installer, follow the steps, but to change the installation directory where the program can read and write to it.  
 
 ## Instructions for Use
 
 ### Synopsis
 Protcid_demo –infile ls-pdb.txt –datadir datadir [options]
 ProtCid_demo generates interfaces for each PDB entry in “ls-pdb.txt”, clusters interfaces and stores all files in “datadir”. 
+```
     -infile           a text file containing a list of PDBs, one PDB per line 
+```    
     -datadir       the path where result data are to be saved
 
 ### Options
     -alnfile     a text file containing a multiple sequence alignment for the input PDBs. The program will use this file to map residues when calculating similarity Q score of two interfaces from different entries. If this file is not provided, the author residue numbers are used when calculating Q scores. The alignment can be clustal omega format, or a simple text file, one line for each PDB sequence or chain, gaps must be filled by ‘-’, like 
     
-'''clustal omega format
+```
+clustal omega format
 CLUSTAL O(1.2.4) multiple sequence alignment
         
 1gwnC      MGSSHHHHHHSSGLVPRGSHMDPNQNVKCKIVVVGDSQCGKTALLHVFAKDCFPENYVPT	60
@@ -41,10 +44,12 @@ CLUSTAL O(1.2.4) multiple sequence alignment
 
 1gwnC      VFENYTASFEIDTQRIELSLWDTSGSPYYDNVRPLSYPDSDAVLICFDISRPETLDSVLK	120
 5p21A      IEDSYRKQVVIDGETCLLDILDTAGQEEYSAMRDQYMRTGEGFLCVFAINNTKSFEDIH-	94        
-'''         
+```         
 OR        
-'''1gwnC MGSSHHHHHHSSGLVPRGSHMDPNQNVKCKIVVVGDSQCGKTALLHVFAKDCFPENYVPTVFENYTASFEIDTQRIELSLWDTSGSPYYDNVRPLSYPDS DAVLICFDISRPETLDSVLK
-5p21A -------------------------MTEYKLVVVGAGGVGKSALTIQLIQNHFVDEYDPTIEDSYRKQVVIDGETCLLDILDTAGQEEYSAMRDQYMRTG EGFLCVFAINNTKSFEDIH- '''
+```
+1gwnC MGSSHHHHHHSSGLVPRGSHMDPNQNVKCKIVVVGDSQCGKTALLHVFAKDCFPENYVPTVFENYTASFEIDTQRIELSLWDTSGSPYYDNVRPLSYPDS DAVLICFDISRPETLDSVLK
+5p21A -------------------------MTEYKLVVVGAGGVGKSALTIQLIQNHFVDEYDPTIEDSYRKQVVIDGETCLLDILDTAGQEEYSAMRDQYMRTG EGFLCVFAINNTKSFEDIH- 
+```
 
     -groupname       to create a folder so all results are saved into a specific folder with the name, and also named clusters. For instance, -groupname ras. All results are saved into a folder under “datadir”, and clusters are named by ras_cluster ID.tar.gz, e.g. ras_1.tar.gz for the first cluster of user group “ras”. 
 
