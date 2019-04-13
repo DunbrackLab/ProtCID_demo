@@ -33,7 +33,7 @@ or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_d
 
 ### Synopsis
 Protcid_demo –infile ls-pdb.txt –datadir datadir [options]
-The ProtCid_demo generates interfaces for each PDB entry in “ls-pdb.txt”, clusters interfaces, and stores all files in “datadir”. 
+The ProtCid_demo generates interfaces for each PDB entry in “ls-pdb.txt”, clusters interfaces, and stores all files in “datadir”. A cluster contains at least two entries. 
 ```
 -infile        a text file containing a list of PDB IDs (e.g. 5ldg or 5LDG), one PDB per line 
 ```  
@@ -70,13 +70,13 @@ For instance, -groupname ras. All results are saved into a folder named "ras" un
 ### How to run 
 Change the current directory to the directory where ProtCID_demo.exe is located. It is not required to change the directory, but please provide the full path to all parameters except -groupname.  
 ```
-ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST1A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data 
+ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST2A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data 
 ```
-This will generate and cluster interfaces from PDB entries in ls-pdb_ST1A1.txt, save all files, and coordindates to demo_data folder. The PDB entries contain the same protein, ST1A1_HUMAN. When calculating Q scores, residue numbers in the PDB file (author residue numbers) are used. 
+This will generate and cluster interfaces from PDB entries in ls-pdb_ST2A1.txt, save all files, and coordindates to demo_data folder. The PDB entries contain the same protein, ST2A1_HUMAN. When calculating Q scores, residue numbers in the PDB file (author residue numbers) are used. The cluster 1 in folder "clusterCoordinates" contains the coordindates of the biological dimer of human sulfotransferases. 
 ```
-ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST1A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data –groupname sulf
+ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST2A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data –groupname ST2A1
 ```
-This will generate and cluster interfaces from PDB entries in ls-pdb_ST1A1.txt, and save all files and coordinates to demo_data\sulf folder and name cluster coordinates files in sulf_cluster ID.tar.gz (e.g. sulf_1.tar.gz).
+This will generate and cluster interfaces from PDB entries in ls-pdb_ST2A1.txt, and save all files and coordinates to demo_data\ST2A1 folder and name cluster coordinates files in ST2A1_cluster ID.tar.gz (e.g. ST2A1_1.tar.gz).
 ```
 ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_RAS.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data –alnfile C:\Users\Qifang\ProtCid_demo_setup\demo_data\RasMonomers_clustalO.aln –groupname ras
 ```
