@@ -68,7 +68,7 @@ OR
 For instance, -groupname ras. All results are saved into a folder named "ras" under “datadir”, and clusters are named by ras_cluster ID.tar.gz, e.g. ras_1.tar.gz for the first cluster of user group “ras”. 
 
 ### How to run 
-Change the current directory to the directory where ProtCID_demo.exe is located. It is not required to change the directory, but please provide the full path to all parameters except -groupname.  
+Run ProtCid_demo in Windows command line. Change the current directory to the directory where ProtCID_demo.exe is located. It is not required to change the directory, but please provide the full path to all parameters except -groupname.  
 ```
 ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST2A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data 
 ```
