@@ -27,7 +27,7 @@ All source code of ProtCID including the demo program is written in C# in Visual
 
 ## Installation Guide
 It is very easy to install the demo program. Just download [protcid_demo_setup.msi](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release) 
-or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release), double click the installer, and follow the indicated steps. Please change the installation directory where the program can read and write to it, since ProtCID uses [third-party software](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release/tools) which might need read and write to the directory.  
+or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release), double click the installer, and follow the indicated steps. Change the installation directory where the program can read and write to it, since ProtCID uses [third-party software](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release/tools) which might need read and write to the directory. For example, change the default intallation directory ("C:\Program Files (x86)\FCCC\ProtCid_demo_setup\") to user home directory ("C:\users\qifang\FCCC\ProtCid_demo_stup\").
 
 ## Instructions for Use
 
@@ -68,9 +68,9 @@ OR
 For instance, -groupname ras. All results are saved into a folder named "ras" under “datadir”, and clusters are named by ras_cluster ID.tar.gz, e.g. ras_1.tar.gz for the first cluster of user group “ras”. 
 
 ### How to run 
-Run ProtCid_demo in Windows command line. Change the current directory to the directory where ProtCID_demo.exe is located. It is not required to change the directory, but please provide the full path to all parameters except -groupname.  
+Run ProtCid_demo in Windows command line. Provide the full path to the program and all parameters except -groupname. At this point, once again, please make sure the directory the program is installed in is not "C:\Program Files (x86)\", if it is, uninstall the demo and reinstall it to "C:\Users\".
 ```
-ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST2A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data 
+C:\Users\Qifang\ProtCid_demo_setup\ProtCID_demo –infile C:\Users\Qifang\ProtCid_demo_setup\demo_data\ls-pdb_ST2A1.txt –datadir C:\Users\Qifang\ProtCid_demo_setup\demo_data 
 ```
 This will generate and cluster interfaces from PDB entries in ls-pdb_ST2A1.txt, save all files, and coordindates to demo_data folder. The PDB entries contain the same protein, ST2A1_HUMAN. When calculating Q scores, residue numbers in the PDB file (author residue numbers) are used. The cluster 1 in folder "clusterCoordinates" contains the coordindates of the biological dimer of human sulfotransferases. 
 ```
