@@ -27,7 +27,7 @@ All source code of ProtCID including the demo program is written in C# in Visual
 
 ## Installation Guide
 It is very easy to install the demo program. Just download [protcid_demo_setup.msi](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release) 
-or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release), double click the installer, and follow the indicated steps. Change the installation directory where the program can read and write to it, since ProtCID uses [third-party software](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release/tools) which might need read and write to the directory. For example, change the default intallation directory ("C:\Program Files (x86)\FCCC\ProtCid_demo_setup\") to user home directory ("C:\users\qifang\FCCC\ProtCid_demo_stup\").
+or [setup.exe](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release), double click the installer, and follow the indicated steps. Change the installation directory where the program can read and write to it, since ProtCID uses [third-party software](https://github.com/DunbrackLab/ProtCID_demo/tree/master/ProtCid_demo_setup/Release/tools) which might need read and write to the directory. For example, change the default intallation directory ("C:\Program Files (x86)\FCCC\ProtCid_demo_setup\\") to user home directory ("C:\users\qifang\FCCC\ProtCid_demo_stup\\").
 
 ## Instructions for Use
 
